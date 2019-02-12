@@ -47,8 +47,9 @@ a:hover {
 ----------------------------------------------*/
 
 .container {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0 5%;
 }
 
 .site-header {
@@ -75,8 +76,94 @@ a:hover {
             display: inline-block;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-left: 50px;
+            margin-left: 100px;
         }
+
+.post {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 530px) {
+    .post {
+        margin-bottom: 135px;
+    }
+}
+
+.post-img {
+    margin-bottom: 25px;
+}
+
+.post-img-big {
+    margin-bottom: 90px;
+}
+
+.post-meta {
+    margin-bottom: 25px;
+}
+
+.post-meta, .post-comment {
+    text-transform: uppercase;
+    font: 0.9em 'Ubuntu', sans-serif;
+}
+
+    .post-meta a, .post-comment {
+        color: #b4ad9e;
+    }
+
+.post-title {
+    margin-bottom: 25px;
+}
+    .post-title h1, .post-title h2, .post-title h3, .post-title h4, .post-title h5, .post-title h6 {
+        font-weight: normal;
+        font-size: 1.8em;
+    }
+
+.post-body {
+    font-size: 0.9em;
+    line-height: 175%;
+}
+
+.post-comment {
+    display: block;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.newsletter-form {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 75px 0;
+    margin-bottom: 120px;
+}
+
+.newsletter-form h1, .newsletter-form h2, .newsletter-form h3, .newsletter-form h4, .newsletter-form h5, .newsletter-form h6 {
+    font-weight: normal;
+    font-size: 1.8em;
+    margin-bottom: 80px;
+}
+
+.newsletter {
+    border-bottom: 1px solid #000;
+    display: inline-block;
+}
+
+.newsletter input[type=text] {
+    background: none;
+    border: 0;
+    padding: .3em;
+    font: 1em 'Playfair Display', serif;
+    width: 250px;
+}
+
+.newsletter input[type=submit] {
+    width: 32px;
+    height: 17px;
+    background: url(../img/newsletter-icon@2x.png) no-repeat;
+    text-indent: -9999px;
+    border: 0;
+    background-size: 100%;
+    cursor: pointer;
+}
 
 /*---------------------------------------------
 // ENDS [layout]
@@ -106,6 +193,12 @@ a:hover {
 
     .col-9 {
         width: 70%;
+    }
+
+    @media (max-width: 530px) {
+        .col-6-sm {
+            width: 100%;
+        }
     }
 
 /*---------------------------------------------
