@@ -1,0 +1,113 @@
+/*---------------------------------------------
+[$reset]
+----------------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------------------
+// ENDS [reset]
+----------------------------------------------*/
+
+
+/*---------------------------------------------
+[$universal]
+----------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display|Ubuntu:300');
+
+body {
+    color: #626262;
+    font: 1em 'Playfair Display', serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #626262;
+}
+
+a:hover {
+    color: #000;
+}
+
+/*---------------------------------------------
+// ENDS [universal]
+----------------------------------------------*/
+
+
+/*---------------------------------------------
+[$layout]
+----------------------------------------------*/
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.site-header {
+    padding: 70px 0;
+}
+
+    .site-logo {
+        font: 1em 'Inconsolata', monospace;
+        color: #000;
+    }
+
+        .site-logo h1 {
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+        }
+
+    .site-nav {
+        text-align: right;
+    }
+
+        .site-nav li {
+            font-size: 0.8em;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: 50px;
+        }
+
+/*---------------------------------------------
+// ENDS [layout]
+----------------------------------------------*/
+
+/*---------------------------------------------
+[$grid]
+----------------------------------------------*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .row > * {
+        margin-bottom: 20px;
+    }
+
+    .col-6 {
+        width: 45%;
+    }
+
+    .col-3 {
+        width: 22%;
+    }
+
+    .col-9 {
+        width: 70%;
+    }
+
+/*---------------------------------------------
+// ENDS [grid]
+----------------------------------------------*/
